@@ -1,0 +1,35 @@
+{
+  "name": "object-to-formdata",
+  "version": "1.0.0",
+  "description": "Easy way to convert nest javascript object to formdata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silkyland/object-to-formdata.git"
+  },
+  "keywords": [
+    "nest",
+    "object",
+    "js",
+    "object",
+    "object",
+    "nest",
+    "javascript",
+    "object",
+    "formdata",
+    "obj2fd",
+    "convert",
+    "object",
+    "to",
+    "formdata"
+  ],
+  "author": "Bundit Nuntates",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silkyland/object-to-formdata/issues"
+  },
+  "homepage": "https://github.com/silkyland/object-to-formdata#readme"
+}
