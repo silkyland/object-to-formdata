@@ -1,6 +1,6 @@
 {
   "name": "obj2fd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easy way to convert nest javascript object to formdata",
   "main": "index.js",
   "scripts": {

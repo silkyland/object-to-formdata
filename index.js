@@ -38,6 +38,8 @@ const obj2fd = (obj, form, namespace) => {
  * @param {any} namespace
  */
 export const Truthy = (obj, form, namespace) => {
+    let fd = form || new FormData();
+    let formKey;
     for (let property in obj) {
         if (obj.hasOwnProperty(property) && obj[property]) {
             if (namespace) {
