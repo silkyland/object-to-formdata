@@ -76,4 +76,4 @@ var Truthy = exports.Truthy = function Truthy(obj, form, namespace) {
     return fd;
 };
 
-exports.default = obj2fd;
+exports.default = obj2fd

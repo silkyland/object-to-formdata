@@ -13,7 +13,7 @@ via yarn :
 ## Using ##
 es5 :
 
-    var obj2fd = require('obj2fd/es5');
+    var obj2fd = require('obj2fd/es5').default;
     var object = {a:1, b:2, c:[{a:1,b2},{c:3, d:4}]};
 	var formdata = obj2fd(object)
 	
