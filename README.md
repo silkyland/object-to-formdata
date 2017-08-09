@@ -1,4 +1,4 @@
-Object to Formdata V 1.0.0
+Object to Formdata V 1.0.1
 ==========================
 An easy way to convert nest javascript object to formdata. This package was folk from https://goo.gl/TYVdLF, thanks to https://gist.github.com/ghinda
 ## installation ##
