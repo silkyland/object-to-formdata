@@ -52,7 +52,7 @@ var obj2fd = function obj2fd(obj, form, namespace) {
  * @param {any} form
  * @param {any} namespace
  */
-var Truthy = function Truthy(obj, form, namespace) {
+var Truthy = exports.Truthy = function Truthy(obj, form, namespace) {
     for (var property in obj) {
         if (obj.hasOwnProperty(property) && obj[property]) {
             if (namespace) {
@@ -73,5 +73,4 @@ var Truthy = function Truthy(obj, form, namespace) {
     }
     return fd;
 };
-
 exports.default = obj2fd;
