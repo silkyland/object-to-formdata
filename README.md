@@ -2,10 +2,10 @@ Object to Formdata
 ==========================
 An easy way to convert nest javascript object to formdata. This package was folk from https://goo.gl/TYVdLF, thanks to https://gist.github.com/ghinda
 ## installation ##
-using npm : 
+via npm : 
 
     npm install obj2fd --save
-using yarn :
+via yarn :
 
     yarn add obj2fd 
 
