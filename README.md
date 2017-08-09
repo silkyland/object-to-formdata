@@ -17,7 +17,7 @@ es5 :
     var object = {a:1, b:2, c:[{a:1,b2},{c:3, d:4}]};
 	var formdata = obj2fd(object)
 	
-es 6 : 
+es6 : 
 
     import obj2fd from 'obj2fd'
     let object = {a:1, b:2, c:[{a:1, b2}, {c:3, d:4}]}
@@ -33,7 +33,7 @@ es5 :
 	var formdata = obj2fd(object)
 	//result {c: [{c:3}]}
 	
-es 6 : 
+es6 : 
 
     import { Thuthy as obj2fd } from 'obj2fd'
     let object = {a:0,b:undefined,c:[{a:false, b: NaN}, {c:3, d:0}]}
