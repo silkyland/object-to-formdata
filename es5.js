@@ -34,7 +34,7 @@ var obj2fd = function obj2fd(obj, form, namespace) {
             if (obj[property]instanceof Date) {
                 fd.append(formKey, obj[property].toISOString());
             } else if (_typeof(obj[property]) === 'object' && !(obj[property]instanceof File)) {
-                toFormData(obj[property], fd, formKey);
+                obj2fd(obj[property], fd, formKey);
             } else {
                 // if it's a string or a File object
                 fd.append(formKey, obj[property]);
@@ -66,7 +66,7 @@ var Truthy = function Truthy(obj, form, namespace) {
             if (obj[property]instanceof Date) {
                 fd.append(formKey, obj[property].toISOString());
             } else if (_typeof(obj[property]) === 'object' && !(obj[property]instanceof File)) {
-                toFormData(obj[property], fd, formKey);
+                Truthy(obj[property], fd, formKey);
             } else {
                 // if it's a string or a File object
                 fd.append(formKey, obj[property]);
