@@ -20,7 +20,7 @@ const obj2fd = (obj, form, namespace) => {
             if (obj[property]instanceof Date) {
                 fd.append(formKey, obj[property].toISOString());
             } else if (typeof obj[property] === 'object' && !(obj[property]instanceof File)) {
-                toFormData(obj[property], fd, formKey)
+                obj2fd(obj[property], fd, formKey)
             } else { // if it's a string or a File object
                 fd.append(formKey, obj[property])
             }
@@ -51,7 +51,7 @@ export const Truthy = (obj, form, namespace) => {
             if (obj[property]instanceof Date) {
                 fd.append(formKey, obj[property].toISOString());
             } else if (typeof obj[property] === 'object' && !(obj[property]instanceof File)) {
-                toFormData(obj[property], fd, formKey)
+                obj2fd(obj[property], fd, formKey)
             } else { // if it's a string or a File object
                 fd.append(formKey, obj[property])
             }
