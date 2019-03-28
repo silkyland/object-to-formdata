@@ -31,9 +31,11 @@ var obj2fd = function obj2fd(obj, form, namespace) {
                 formKey = property;
             }
 
-            if (obj[property]instanceof Date) {
+            if (obj[property] instanceof Date) {
                 fd.append(formKey, obj[property].toISOString());
-            } else if (_typeof(obj[property]) === 'object' && !(obj[property]instanceof File)) {
+            } else if (_typeof(obj[property]) === 'object'
+                && !(obj[property] instanceof File)
+                && !(obj[property] instanceof Blob)) {
                 obj2fd(obj[property], fd, formKey);
             } else {
                 // if it's a string or a File object
